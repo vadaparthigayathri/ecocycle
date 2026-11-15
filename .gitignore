@@ -8,3 +8,5 @@ dist/
 build/
 .vscode/
 backend_old/
+
+backend_old
