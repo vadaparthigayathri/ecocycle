@@ -1,0 +1,414 @@
+
+.household-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f7f4;
+  color: #263b2e;
+  font-family: Arial, sans-serif;
+}
+
+.household-sidebar {
+  width: 255px;
+  min-height: 100vh;
+  background: #145c35;
+  color: white;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.household-sidebar h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.household-sidebar > small {
+  color: #c5e6ce;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.household-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.12);
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 35px 0;
+}
+
+.household-profile > span {
+  font-size: 30px;
+}
+
+.household-profile strong,
+.household-profile small {
+  display: block;
+}
+
+.household-profile small {
+  color: #c5e6ce;
+  margin-top: 6px;
+  font-size: 10px;
+}
+
+.household-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.household-sidebar nav a {
+  color: #e0f0e5;
+  text-decoration: none;
+  padding: 14px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.household-sidebar nav a:hover {
+  background: #27844c;
+}
+
+.household-sidebar button {
+  margin-top: auto;
+  padding: 13px;
+  background: white;
+  color: #145c35;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.household-main {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+}
+
+.household-main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.household-main header h1 {
+  font-size: 25px;
+}
+
+.household-main header p {
+  color: #819087;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.household-main header span {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.household-welcome {
+  background: linear-gradient(110deg, #16673a, #3aab62);
+  color: white;
+  padding: 35px;
+  border-radius: 13px;
+  margin-bottom: 25px;
+}
+
+.household-welcome h1 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.household-welcome p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #e2f4e6;
+}
+
+.household-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.household-stats > div {
+  background: white;
+  padding: 22px;
+  border-radius: 11px;
+  border: 1px solid #e6eee7;
+}
+
+.household-stats span {
+  font-size: 28px;
+}
+
+.household-stats p {
+  color: #849087;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.household-stats h2 {
+  color: #238447;
+  margin-top: 12px;
+  font-size: 23px;
+}
+
+.household-panel {
+  background: white;
+  padding: 25px;
+  border: 1px solid #e6eee7;
+  border-radius: 11px;
+  margin-bottom: 22px;
+}
+
+.household-panel h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.household-panel > p {
+  color: #87948a;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.household-table-scroll {
+  overflow-x: auto;
+}
+
+.household-panel table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.household-panel th {
+  background: #f1f7f2;
+  color: #5b6d60;
+  padding: 15px 10px;
+}
+
+.household-panel td {
+  padding: 16px 10px;
+  border-bottom: 1px solid #edf1ed;
+  color: #536359;
+}
+
+.household-schedule {
+  background: #f1f8f2;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.household-schedule span {
+  font-size: 35px;
+}
+
+.household-schedule h3 {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.household-schedule p {
+  color: #78867b;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.household-schedule button {
+  background: #218c48;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.household-reward {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #f0f8ef;
+  border-radius: 10px;
+  padding: 22px;
+  margin-top: 18px;
+}
+
+.household-reward > span {
+  font-size: 42px;
+}
+
+.household-reward h1 {
+  color: #238447;
+  font-size: 25px;
+}
+
+.household-reward p {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #75847a;
+}
+
+.household-impact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.household-impact > div {
+  padding: 20px;
+  border-radius: 9px;
+  background: #f1f8f2;
+}
+
+.household-impact strong,
+.household-impact span {
+  display: block;
+}
+
+.household-impact strong {
+  font-size: 23px;
+  color: #218c48;
+  margin-bottom: 8px;
+}
+
+.household-impact span {
+  font-size: 11px;
+  color: #78867b;
+}
+
+.household-main footer {
+  text-align: center;
+  padding: 22px;
+  color: #849087;
+  font-size: 12px;
+}
+
+@media (max-width: 1050px) {
+  .household-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .household-dashboard {
+    flex-direction: column;
+  }
+
+  .household-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .household-sidebar button {
+    margin-top: 20px;
+  }
+
+  .household-main {
+    padding: 15px;
+  }
+
+  .household-main header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .household-impact {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Household Dashboard Images */
+
+.household-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  overflow: hidden;
+}
+
+.household-welcome-content {
+  flex: 1;
+}
+
+.household-welcome img {
+  width: 40%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.household-section-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+
+.household-schedule {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #f0f8f0;
+}
+
+.household-schedule img {
+  width: 45%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.household-schedule > div {
+  flex: 1;
+}
+
+.household-reward {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f0f8f0;
+}
+
+.household-reward img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+@media (max-width: 700px) {
+  .household-welcome,
+  .household-schedule,
+  .household-reward {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .household-welcome img,
+  .household-schedule img,
+  .household-reward img {
+    width: 100%;
+  }
+}

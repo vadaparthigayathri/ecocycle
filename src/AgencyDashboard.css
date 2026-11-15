@@ -1,0 +1,289 @@
+
+.agency-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f7f4;
+  color: #263b2e;
+  font-family: Arial, sans-serif;
+}
+
+.agency-sidebar {
+  width: 255px;
+  min-height: 100vh;
+  background: #145c35;
+  color: white;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.agency-sidebar h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.agency-sidebar > small {
+  color: #c5e6ce;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.agency-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.12);
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 35px 0;
+}
+
+.agency-profile > span {
+  font-size: 30px;
+}
+
+.agency-profile strong,
+.agency-profile small {
+  display: block;
+}
+
+.agency-profile small {
+  color: #c5e6ce;
+  margin-top: 6px;
+  font-size: 10px;
+}
+
+.agency-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.agency-sidebar nav a {
+  color: #e0f0e5;
+  text-decoration: none;
+  padding: 14px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.agency-sidebar nav a:hover {
+  background: #27844c;
+}
+
+.agency-sidebar button {
+  margin-top: auto;
+  padding: 13px;
+  background: white;
+  color: #145c35;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.agency-main {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+}
+
+.agency-main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.agency-main header h1 {
+  font-size: 25px;
+}
+
+.agency-main header p {
+  color: #819087;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.agency-main header span {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.agency-welcome {
+  background: linear-gradient(110deg, #16673a, #3aab62);
+  color: white;
+  padding: 35px;
+  border-radius: 13px;
+  margin-bottom: 25px;
+}
+
+.agency-welcome h1 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.agency-welcome p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #e2f4e6;
+}
+
+.agency-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.agency-stats > div {
+  background: white;
+  padding: 22px;
+  border-radius: 11px;
+  border: 1px solid #e6eee7;
+}
+
+.agency-stats span {
+  font-size: 28px;
+}
+
+.agency-stats p {
+  color: #849087;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.agency-stats h2 {
+  color: #238447;
+  margin-top: 12px;
+  font-size: 23px;
+}
+
+.agency-panel {
+  background: white;
+  padding: 25px;
+  border: 1px solid #e6eee7;
+  border-radius: 11px;
+  margin-bottom: 22px;
+}
+
+.agency-panel h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.agency-panel > p {
+  color: #87948a;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.agency-table-scroll {
+  overflow-x: auto;
+}
+
+.agency-panel table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.agency-panel th {
+  background: #f1f7f2;
+  color: #5b6d60;
+  padding: 15px 10px;
+}
+
+.agency-panel td {
+  padding: 16px 10px;
+  border-bottom: 1px solid #edf1ed;
+  color: #536359;
+}
+
+.agency-process {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.agency-process > div {
+  background: #f1f8f2;
+  padding: 22px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.agency-process h3 {
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.agency-process p {
+  color: #238447;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.agency-panel > h1 {
+  color: #238447;
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.agency-note {
+  background: #fff8e9;
+  color: #846b37;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.agency-main footer {
+  text-align: center;
+  padding: 22px;
+  color: #849087;
+  font-size: 12px;
+}
+
+@media (max-width: 1050px) {
+  .agency-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .agency-dashboard {
+    flex-direction: column;
+  }
+
+  .agency-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .agency-sidebar button {
+    margin-top: 20px;
+  }
+
+  .agency-main {
+    padding: 15px;
+  }
+
+  .agency-main header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .agency-process {
+    grid-template-columns: 1fr;
+  }
+}
